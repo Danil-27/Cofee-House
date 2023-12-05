@@ -1,0 +1,102 @@
+.button,
+.button-primary {
+  line-height: 150%;
+  display: inline;
+}
+
+.button-primary {
+  background-color: var(--background-body);
+  border-radius: 100px;
+  .button__text {
+    position: relative;
+    top: 0px;
+    left: 10px;
+    transition-duration: 0.5s;
+    transition-property: left;
+    transition-timing-function: linear;
+  }
+  img {
+    position: relative;
+    top: 4px;
+    left: 0;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease-in;
+  }
+}
+
+.button-link-storeApp,
+.button-link-google-play {
+  border-radius: 100px;
+  border: 1px solid var(--border-dark);
+  display: inline-flex;
+  gap: 0 8px;
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+  transition-timing-function: linear;
+}
+
+.button-social {
+  width: 60px;
+  height: 60px;
+  border: solid 1px var(--background-body);
+  border-radius: 100px;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  svg {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_path {
+    transition-duration: 0.3s;
+    transition-property: stroke;
+    transition-timing-function: linear;
+    stroke: var(--background-body);
+  }
+}
+
+@media (hover: hover) {
+  .button-primary {
+    &:hover {
+      .button__text {
+        left: -4px;
+        transition-duration: 0.5s;
+      }
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  .button-link-storeApp,
+  .button-link-google-play {
+    color: var(--text-dark);
+    &:hover {
+      transition-duration: 1s;
+      background-color: var(--background-container);
+      color: var(--text-light);
+      .button-link__svg {
+        transition-duration: 1s;
+        &1,
+        &2,
+        &3,
+        &4 {
+          transition-duration: 1s;
+          fill: var(--text-light);
+        }
+      }
+    }
+  }
+
+  .button-social:hover {
+    background-color: var(--text-light);
+    .button-social_path {
+      stroke: var(--text-dark);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  &__logo-link {
+    padding-top: 6px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}

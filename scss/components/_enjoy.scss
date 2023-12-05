@@ -1,0 +1,29 @@
+.enjoy {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 100px 100px 100px 100px;
+  border-radius: 40px;
+  background-image: url(../images/main/enjoy.jpg);
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 644px;
+  &__wrapper {
+    max-width: 530px;
+    margin-left: -3px;
+  }
+  &__heading,
+  &__text {
+    color: var(--text-light);
+  }
+
+  &__text {
+    padding-top: 40px;
+    padding-bottom: 58px;
+  }
+  &__button {
+    color: var(--text-dark);
+    margin-left: 2px;
+    padding: 22px 67px;
+  }
+}

@@ -1,0 +1,48 @@
+// burger-link
+// font-size: 32px
+// line-height: 125%
+
+.burger {
+  width: 44px;
+  height: 44px;
+  border: solid var(--border-dark);
+  border-radius: 50%;
+  transition: transform 0.4s;
+  transform: rotate(0deg);
+  z-index: 20;
+  position: relative;
+  &:hover .burger__line:first-of-type {
+    rotate: 45deg;
+    position: relative;
+    top: 5px;
+    transition: rotate 0.6s;
+  }
+  &:hover .burger__line:last-of-type {
+    rotate: -45deg;
+    position: relative;
+    top: -5px;
+    transition: rotate 0.6s;
+  }
+  &__block {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__line {
+    width: 16px;
+    height: 2px;
+    background-color: var(--text-dark);
+    transition: rotate 0.6s;
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}

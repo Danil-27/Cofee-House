@@ -2310,7 +2310,8 @@ a {
 .footer__background {
   border-radius: 40px;
   background: var(--background-container);
-  padding: 100px;
+  padding: 60px 16px;
+  text-align: center;
 }
 .footer__heading {
   padding-bottom: 40px;
@@ -2319,6 +2320,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 0 12px;
 }
 .footer__Contact-us {
@@ -2337,7 +2343,18 @@ a {
   margin-bottom: 20px;
 }
 .footer__width {
-  max-width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer__wrapper {
   display: -webkit-inline-box;
@@ -2365,6 +2382,21 @@ a {
           transition-timing-function: linear;
 }
 
+@media screen and (min-width: 485px) {
+  .footer__background {
+    text-align: start;
+    padding: 100px;
+  }
+  .footer__block {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__width {
+    display: block;
+    max-width: 330px;
+  }
+}
 @media screen and (min-width: 992px) {
   .footer__Contact-us .footer__wrapper, .footer__Contact-us__heading {
     margin-left: 40px;

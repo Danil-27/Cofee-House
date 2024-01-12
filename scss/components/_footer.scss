@@ -4,7 +4,8 @@
   &__background {
     border-radius: 40px;
     background: var(--background-container);
-    padding: 100px;
+    padding: 60px 16px;
+    text-align: center;
   }
   &__content {
   }
@@ -13,6 +14,8 @@
   }
   &__block {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 0 12px;
   }
   //-----------------
@@ -34,7 +37,10 @@
     }
   }
   &__width {
-    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
   &__wrapper {
     display: inline-flex;
@@ -58,6 +64,21 @@
   }
 }
 
+@media screen and (min-width: 485px) {
+  .footer {
+    &__background {
+      text-align: start;
+      padding: 100px;
+    }
+    &__block {
+      justify-content: flex-start;
+    }
+    &__width {
+      display: block;
+      max-width: 330px;
+    }
+  }
+}
 @media screen and (min-width: 992px) {
   .footer {
     &__Contact-us {

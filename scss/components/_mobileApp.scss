@@ -10,6 +10,8 @@
   }
   &__block-buttom {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
   &__button {
@@ -21,16 +23,28 @@
     }
   }
   &__img {
+    padding-top: 30px;
     text-align: center;
   }
 }
 
+@media screen and (min-width: 445px) {
+  .mobileApp {
+    &__block-buttom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
+}
 @media screen and (min-width: 992px) {
   .mobileApp {
     &__presentation {
       max-width: 630px;
     }
     &__img {
+      padding-top: 0px;
       text-align: end;
     }
   }

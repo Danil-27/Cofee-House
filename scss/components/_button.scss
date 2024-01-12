@@ -61,6 +61,10 @@
   }
 }
 
+.button-link-storeApp,
+.button-link-google-play {
+  color: var(--text-dark);
+}
 @media (hover: hover) {
   .button-primary {
     &:hover {
@@ -75,7 +79,6 @@
   }
   .button-link-storeApp,
   .button-link-google-play {
-    color: var(--text-dark);
     &:hover {
       transition-duration: 1s;
       background-color: var(--background-container);

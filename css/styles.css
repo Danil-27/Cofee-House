@@ -2551,6 +2551,11 @@ a {
   stroke: var(--background-body);
 }
 
+.button-link-storeApp,
+.button-link-google-play {
+  color: var(--text-dark);
+}
+
 @media (hover: hover) {
   .button-primary:hover .button__text {
     left: -4px;
@@ -2559,10 +2564,6 @@ a {
   }
   .button-primary:hover img {
     opacity: 1;
-  }
-  .button-link-storeApp,
-  .button-link-google-play {
-    color: var(--text-dark);
   }
   .button-link-storeApp:hover,
   .button-link-google-play:hover {
@@ -2911,6 +2912,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
 .mobileApp__button-app {
@@ -2920,14 +2926,29 @@ a {
   padding: 12px 44px 12px 20px;
 }
 .mobileApp__img {
+  padding-top: 30px;
   text-align: center;
 }
 
+@media screen and (min-width: 445px) {
+  .mobileApp__block-buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 20px;
+  }
+}
 @media screen and (min-width: 992px) {
   .mobileApp__presentation {
     max-width: 630px;
   }
   .mobileApp__img {
+    padding-top: 0px;
     text-align: end;
   }
 }

@@ -2819,7 +2819,6 @@ a {
   right: 0;
 }
 .slider__arrow-left, .slider__arrow-right {
-  position: absolute;
   width: 60px;
   height: 60px;
   border-radius: 100px;
@@ -2894,6 +2893,11 @@ a {
   }
   .slider__element:hover .slider__element_black {
     background-color: var(--border-dark);
+  }
+}
+@media screen and (min-width: 380px) {
+  .slider__arrow-left, .slider__arrow-right {
+    position: absolute;
   }
 }
 .mobileApp__heading {

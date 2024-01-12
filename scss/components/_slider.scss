@@ -11,7 +11,6 @@
   }
   &__arrow-left,
   &__arrow-right {
-    position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 100px;
@@ -84,6 +83,15 @@
       .slider__element_black {
         background-color: var(--border-dark);
       }
+    }
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .slider {
+    &__arrow-left,
+    &__arrow-right {
+      position: absolute;
     }
   }
 }

@@ -7,7 +7,6 @@
   }
   &-heading-1 {
     font-size: 42px;
-    line-height: 76px;
   }
   &-heading-2 {
     font-size: 32px;
@@ -49,10 +48,11 @@
   .section {
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 769px) {
   .section {
     &-heading-1 {
       font-size: 72px;
+      line-height: 76px;
     }
     &-heading-2 {
       font-size: 60px;

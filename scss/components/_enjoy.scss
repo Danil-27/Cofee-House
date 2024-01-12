@@ -1,7 +1,8 @@
 .enjoy {
   margin-right: 0px;
   margin-left: 0px;
-  padding: 100px 100px 100px 100px;
+  padding: 10px;
+  text-align: center;
   border-radius: 40px;
   background-image: url(../images/main/enjoy.jpg);
   background-size: no-repeat;
@@ -25,5 +26,16 @@
     color: var(--text-dark);
     margin-left: 2px;
     padding: 22px 67px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .enjoy {
+    padding: 60px 16px 60px 16px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 524px) {
+  .enjoy {
+    padding: 100px;
   }
 }

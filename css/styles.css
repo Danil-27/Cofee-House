@@ -433,7 +433,7 @@ a {
 }
 
 .container {
-  width: 1380px !important;
+  max-width: 100%;
   margin: 0 auto;
   padding-right: 10px;
   padding-left: 10px;
@@ -444,11 +444,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1380px !important;
-  }
-}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2244,7 +2239,6 @@ a {
 }
 .section-heading-1 {
   font-size: 42px;
-  line-height: 76px;
 }
 .section-heading-2 {
   font-size: 32px;
@@ -2275,9 +2269,10 @@ a {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 769px) {
   .section-heading-1 {
     font-size: 72px;
+    line-height: 76px;
   }
   .section-heading-2 {
     font-size: 60px;
@@ -2386,7 +2381,8 @@ a {
 .enjoy {
   margin-right: 0px;
   margin-left: 0px;
-  padding: 100px 100px 100px 100px;
+  padding: 10px;
+  text-align: center;
   border-radius: 40px;
   background-image: url(../images/main/enjoy.jpg);
   background-size: no-repeat;
@@ -2411,6 +2407,17 @@ a {
   padding: 22px 67px;
 }
 
+@media screen and (min-width: 360px) {
+  .enjoy {
+    padding: 60px 16px 60px 16px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 524px) {
+  .enjoy {
+    padding: 100px;
+  }
+}
 .burger {
   width: 44px;
   height: 44px;
@@ -2758,7 +2765,8 @@ a {
 .enjoy {
   margin-right: 0px;
   margin-left: 0px;
-  padding: 100px 100px 100px 100px;
+  padding: 10px;
+  text-align: center;
   border-radius: 40px;
   background-image: url(../images/main/enjoy.jpg);
   background-size: no-repeat;
@@ -2783,6 +2791,17 @@ a {
   padding: 22px 67px;
 }
 
+@media screen and (min-width: 360px) {
+  .enjoy {
+    padding: 60px 16px 60px 16px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 524px) {
+  .enjoy {
+    padding: 100px;
+  }
+}
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;

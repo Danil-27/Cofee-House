@@ -3,23 +3,6 @@
   justify-content: center;
   margin-bottom: 20px;
   position: relative;
-  &__arrow-img {
-    stroke: var(--text-dark);
-    position: relative;
-    top: 18px;
-    right: 0;
-  }
-  &__arrow-left,
-  &__arrow-right {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    border: 1px solid var(--border-dark);
-    top: 290px;
-    transition-duration: 0.3s;
-    transition-property: background-color;
-    transition-timing-function: linear;
-  }
   &__arrow-left {
     left: 4px;
   }
@@ -92,6 +75,20 @@
     &__arrow-left,
     &__arrow-right {
       position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 100px;
+      border: 1px solid var(--border-dark);
+      top: 290px;
+      transition-duration: 0.3s;
+      transition-property: background-color;
+      transition-timing-function: linear;
+    }
+    &__arrow-img {
+      stroke: var(--text-dark);
+      position: relative;
+      top: 18px;
+      right: 0;
     }
   }
 }

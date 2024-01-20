@@ -2,17 +2,17 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  gap: 40px;
+  gap: rem(40px);
   justify-items: center;
   &__images {
-    border-radius: 20px;
+    border-radius: rem(20px);
     &_none {
       display: none;
     }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .about {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;

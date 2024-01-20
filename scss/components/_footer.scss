@@ -1,38 +1,36 @@
 .footer {
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
   color: var(--text-light);
   &__background {
     border-radius: 40px;
     background: var(--background-container);
-    padding: 60px 16px;
+    padding: rem(60px) rem(16px);
     text-align: center;
   }
-  &__content {
-  }
   &__heading {
-    padding-bottom: 40px;
+    padding-bottom: rem(40px);
   }
   &__block {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0 12px;
+    gap: rem(0px) rem(12px);
   }
   //-----------------
   &__Contact-us {
-    margin-top: 32px;
+    margin-top: rem(32px);
     &__heading {
-      margin-bottom: 40px;
+      margin-bottom: rem(40px);
     }
     .footer__wrapper {
       &__text {
-        margin-left: 8px;
+        margin-left: rem(8px);
       }
       &:nth-child(2) {
-        padding-bottom: 2px;
+        padding-bottom: rem(2px);
       }
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
       }
     }
   }
@@ -52,10 +50,10 @@
     &:not(:last-child)::before {
       content: '';
       position: absolute;
-      bottom: -4px;
+      bottom: rem(-4px);
       left: 0;
       width: 100%;
-      height: 2px;
+      height: rem(2px);
       background-color: none;
       transition-duration: 0.5s;
       transition-property: background-color;
@@ -68,26 +66,25 @@
   .footer {
     &__background {
       text-align: start;
-      padding: 100px;
+      padding: rem(100px);
     }
     &__block {
       justify-content: flex-start;
     }
     &__width {
       display: block;
-      max-width: 330px;
+      max-width: rem(330px);
     }
   }
 }
-@media screen and (min-width: 992px) {
+
+@media screen and (min-width: 993px) {
   .footer {
     &__Contact-us {
       .footer__wrapper,
       &__heading {
-        margin-left: 40px;
-      }
-      &__heading {
-        margin-bottom: 40px;
+        margin-left: rem(40px);
+        margin-bottom: rem(40px);
       }
     }
   }

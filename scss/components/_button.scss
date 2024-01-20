@@ -9,15 +9,16 @@
   border-radius: 100px;
   .button__text {
     position: relative;
-    top: 0px;
-    left: 10px;
+    top: rem(0px);
+    left: rem(10px);
     transition-duration: 0.5s;
     transition-property: left;
     transition-timing-function: linear;
+    z-index: 0;
   }
   img {
     position: relative;
-    top: 4px;
+    top: rem(4px);
     left: 0;
     opacity: 0;
     transition-duration: 0.3s;
@@ -31,15 +32,15 @@
   border-radius: 100px;
   border: 1px solid var(--border-dark);
   display: inline-flex;
-  gap: 0 8px;
+  gap: rem(0px) rem(8px);
   transition-duration: 0.5s;
   transition-property: background-color, color;
   transition-timing-function: linear;
 }
 
 .button-social {
-  width: 60px;
-  height: 60px;
+  width: rem(60px);
+  height: rem(60px);
   border: solid 1px var(--background-body);
   border-radius: 100px;
   position: relative;
@@ -69,7 +70,7 @@
   .button-primary {
     &:hover {
       .button__text {
-        left: -4px;
+        left: rem(-4px);
         transition-duration: 0.5s;
       }
       img {

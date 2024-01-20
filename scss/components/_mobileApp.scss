@@ -2,28 +2,28 @@
   &__presentation {
   }
   &__heading {
-    padding-bottom: 40px;
+    padding-bottom: rem(40px);
   }
   &__text {
     line-height: 140%;
-    padding-bottom: 40px;
+    padding-bottom: rem(40px);
   }
   &__block-buttom {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: rem(20px);
   }
   &__button {
     &-app {
-      padding: 12px 58px 12px 20px;
+      padding: rem(12px) rem(58px) rem(12px) rem(20px);
     }
     &-play {
-      padding: 12px 44px 12px 20px;
+      padding: rem(12px) rem(44px) rem(12px) rem(20px);
     }
   }
   &__img {
-    padding-top: 30px;
+    padding-top: rem(30px);
     text-align: center;
   }
 }
@@ -34,17 +34,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      gap: 20px;
+      gap: rem(20px);
     }
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   .mobileApp {
     &__presentation {
-      max-width: 630px;
+      max-width: rem(630px);
     }
     &__img {
-      padding-top: 0px;
+      padding-top: rem(0px);
       text-align: end;
     }
   }

@@ -10,7 +10,7 @@
   <!-- Title -->
   <title>Resource Coffee House</title>
   <!-- Styles -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <!-- description -->
   <meta name="description" content="With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.">
   <meta name="keywords" content="Resource Coffee House">
@@ -28,49 +28,55 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="msapplication-config" content="./images/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+  <!-- JS -->
+  <script src="./js/menu.js" defer></script>
 </head>
 
 <body class="body">
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <a class="header__logo-link" href="./index.html">
-            <img class="header-img" src="./images/header/logo.svg" alt="logo Coffee House">
-          </a>
-          <nav class="navbar">
-            <div class="navbar__list">
-              <ul class="list">
-                <li class="list__item">
-                  <a class="list__link" href="#favorite">Favorite coffee</a>
-                </li>
-                <li class="list__item">
-                  <a class="list__link" href="#about">About</a>
-                </li>
-                <li class="list__item">
-                  <a class="list__link" href="#mobileApp">Mobile app</a>
-                </li>
-                <li class="list__item">
-                  <a class="list__link" href="#contact">Contact us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <a class="linkMenu" href="./menu.html">
-            <span class="linkMenu__link">Menu</span>
-            <img class="linkMenu__img" src="./images/icon/coffee-cup.svg" alt="coffee-cup">
-          </a>
-          <div class="burger">
-            <div class="burger__block">
-              <div class="burger__line"></div>
-              <div class="burger__line"></div>
-            </div>
+      <div class="header__wrapper">
+        <a class="header__logo-link" href="./index.html">
+          <img class="header-img" src="./images/header/logo.svg" alt="logo Coffee House">
+        </a>
+        <nav class="navbar">
+          <div class="navbar__list">
+            <ul class="list">
+              <li id="e" class="list__item">
+                <a class="list__link" href="#favorite">Favorite coffee</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="#about">About</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="#mobileApp">Mobile app</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="#contact">Contact us</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="./menu.html">
+                  <span>Menu</span>
+                  <img class="list__img" src="./images/icon/coffee-cup.svg" height="30" width="30" alt="coffee-cup">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a class="linkMenu" href="./menu.html">
+          <span class="linkMenu__link">Menu</span>
+          <img class="linkMenu__img" src="./images/icon/coffee-cup.svg" alt="coffee-cup">
+        </a>
+        <div class="burger">
+          <div class="burger__block">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="section">
+      <section class="section section__enjoy">
         <div class="container">
           <div class="enjoy row">
             <div class="enjoy__wrapper">
@@ -173,7 +179,7 @@
     <footer class="footer container" id="contact">
       <div class="footer__background ">
         <div class="row row-lg-between">
-          <div class="footer__content col-lg-6">
+          <div class="col-lg-6">
             <h2 class="footer__heading section-heading-2">Sip, Savor, Smile. <span class="is-accent">It’s coffee time!</span></h2>
             <div class="footer__block">
               <a class="button-social" href="https://twitter.com/?lang=ru" target="_blank">
@@ -231,7 +237,6 @@
       </div>
     </footer>
   </div>
-  <script src="./js/index.js" defer></script>
 </body>
 
 </html>

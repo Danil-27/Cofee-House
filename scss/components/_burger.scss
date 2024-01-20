@@ -1,22 +1,22 @@
 .burger {
-  width: 44px;
-  height: 44px;
+  width: rem(44px);
+  height: rem(44px);
   border: solid var(--border-dark);
   border-radius: 50%;
   transition: transform 0.4s;
   transform: rotate(0deg);
   z-index: 20;
   position: relative;
-  &:hover .burger__line:first-of-type {
+  .burger-active:first-of-type {
     rotate: 45deg;
     position: relative;
-    top: 5px;
+    top: rem(5px);
     transition: rotate 0.6s;
   }
-  &:hover .burger__line:last-of-type {
+  .burger-active:last-of-type {
     rotate: -45deg;
     position: relative;
-    top: -5px;
+    top: rem(-5px);
     transition: rotate 0.6s;
   }
   &__block {
@@ -27,17 +27,17 @@
     transform: translate(-50%, -50%);
   }
   &__line {
-    width: 16px;
-    height: 2px;
+    width: rem(16px);
+    height: rem(2px);
     background-color: var(--text-dark);
     transition: rotate 0.6s;
     &:not(:first-child) {
-      margin-top: 8px;
+      margin-top: rem(8px);
     }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .burger {
     display: none;
   }

@@ -1,7 +1,7 @@
 .radio-button {
   display: flex;
   align-items: center;
-  padding: 11px 16px 6px 15px;
+  padding: rem(11px) rem(16px) rem(6px) rem(15px);
   cursor: pointer;
   border-radius: 100px;
   border: 1px solid var(--border-light);
@@ -9,8 +9,8 @@
   transition-property: background-color, color, border;
   transition-timing-function: linear;
   &__text {
-    margin-bottom: 4px;
-    margin-left: 15px;
+    margin-bottom: rem(4px);
+    margin-left: rem(15px);
   }
   &__img {
     position: relative;
@@ -24,8 +24,8 @@
       content: '';
       top: -25%;
       left: -40%;
-      width: 30px;
-      height: 30px;
+      width: rem(30px);
+      height: rem(30px);
       border-radius: 100px;
       transition-duration: 0.4s;
       background-color: var(--border-light);

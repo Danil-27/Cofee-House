@@ -1,37 +1,37 @@
 .slider {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   position: relative;
   &__arrow-left {
-    left: 4px;
+    left: rem(4px);
   }
   &__arrow-right {
-    right: 4px;
+    right: rem(4px);
   }
   &__images {
-    max-height: 480px;
-    margin-bottom: 14px;
+    max-height: rem(480px);
+    margin-bottom: rem(14px);
   }
   &__heading,
   &__text {
-    margin-bottom: 16px;
+    margin-bottom: rem(16px);
   }
   &__text {
-    max-width: 490px;
+    max-width: rem(490px);
   }
   &__price {
-    margin-bottom: 37px;
+    margin-bottom: rem(37px);
   }
   &__pagination {
     display: flex;
     justify-content: center;
     .slider__element {
-      padding-top: 3px;
-      padding-bottom: 3px;
+      padding-top: rem(3px);
+      padding-bottom: rem(3px);
       &_black {
-        height: 4px;
-        width: 40px;
+        height: rem(4px);
+        width: rem(40px);
         background-color: var(--border-light);
         transition-duration: 0.3s;
         transition-property: background-color;
@@ -41,7 +41,7 @@
         background-color: var(--border-dark);
       }
       &:not(:last-child) {
-        margin-right: 12px;
+        margin-right: rem(12px);
       }
     }
   }
@@ -70,16 +70,16 @@
   }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 381px) {
   .slider {
     &__arrow-left,
     &__arrow-right {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: rem(60px);
+      height: rem(60px);
       border-radius: 100px;
       border: 1px solid var(--border-dark);
-      top: 290px;
+      top: rem(290px);
       transition-duration: 0.3s;
       transition-property: background-color;
       transition-timing-function: linear;
@@ -87,8 +87,8 @@
     &__arrow-img {
       stroke: var(--text-dark);
       position: relative;
-      top: 18px;
-      right: 0;
+      top: rem(18px);
+      right: rem(0px);
     }
   }
 }

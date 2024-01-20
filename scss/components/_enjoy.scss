@@ -1,17 +1,17 @@
 .enjoy {
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 10px;
+  margin-right: rem(0px);
+  margin-left: rem(0px);
+  padding: rem(10px);
   text-align: center;
   border-radius: 40px;
   background-image: url(../images/main/enjoy.jpg);
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 644px;
+  height: rem(644px);
   &__wrapper {
-    max-width: 530px;
-    margin-left: -3px;
+    max-width: rem(530px);
+    margin-left: rem(-3px);
   }
   &__heading,
   &__text {
@@ -19,23 +19,23 @@
   }
 
   &__text {
-    padding-top: 40px;
-    padding-bottom: 58px;
+    padding-top: rem(40px);
+    padding-bottom: rem(58px);
   }
   &__button {
     color: var(--text-dark);
-    margin-left: 2px;
-    padding: 22px 67px;
+    margin-left: rem(2px);
+    padding: rem(22px) rem(67px);
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 361px) {
   .enjoy {
-    padding: 60px 16px 60px 16px;
+    padding: rem(60px) rem(16px) rem(60px) rem(16px);
     text-align: start;
   }
 }
 @media screen and (min-width: 524px) {
   .enjoy {
-    padding: 100px;
+    padding: rem(100px);
   }
 }

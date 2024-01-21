@@ -24,7 +24,7 @@ links.forEach((link) => {
       burgerLine.forEach((e) => {
         e.classList.remove('burger-active');
       });
-      console.log('Поздравляю! Ты нажал на сылку :)');
+      console.log('Поздравляю! Ты нажал на ссылку :)');
     }
   });
 });
